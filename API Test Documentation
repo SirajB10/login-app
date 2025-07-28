@@ -1,0 +1,83 @@
+Test Plan for API Automation
+Scenarios covered
+Below are the scenarios covered
+•	POST/Signup: Created new user
+•	POST/login: Login with valid credentials
+•	Get/users: Shows the list of users
+•	PUT/users: updated one user
+•	DELETE users: Deleted one user from backend
+Negative scenarios:
+•	POST/InvalidLogin: Login with invalid credentials
+•	PUT/UpdateInvalidUser: Updated the invalid user, which gives error message saying user not found
+Tools used and why
+
+•	API tool: Postman
+•	Automation Postman CLI, Newman to integrate CI/CD
+
+Given the command in the screenshots: Please refer
+
+API Application: Simple login with signup users in the form of table
+•	URL: http://localhost:5000
+Below is the data created, open in json or in notepad++
+ 
+Environment file
+ 
+
+
+
+
+
+
+Automated testcases at collection level
+ 
+
+
+
+
+
+
+
+
+
+Negative scenarios
+ 
+
+After CI/CD integration using New man
+Run the below command
+ 
+
+
+
+
+Test Result:
+ 
+Added Negative scenarios as a separate collection 
+Below is the file used
+ 
+ 
+
+
+
+Below are the execution for manual Run
+API screenshots
+POST Login
+ 
+Get Users
+ 
+
+POST user
+ 
+PUT user
+ 
+
+
+
+Delete user
+ 
+Invalid user
+ 
+
+
+
+
+
